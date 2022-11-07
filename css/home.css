@@ -12,17 +12,27 @@ body {
   font-size: 75px;
 }
 
+h2 {
+  font-size: 50px;
+}
+
 .g-col-4 {
   width: 75%;
   word-spacing: 5px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .shack {
   width: 800px;
   display: table;
   margin-left: 37vh;
+}
+
+h3 {
+  align-items: center;
+  justify-content: center;
+  word-spacing: 5px;
+  font-size: 50px;
 }
 
 @media screen and (max-width: 100vh) {
@@ -40,9 +50,17 @@ body {
     font-size: 20px;
   }
 
+  h2 {
+    font-size: 30px;
+  }
+
   .shack {
-    width: 325px;
+    width: 290px;
     display: table;
-    margin-left: 4vh;
+    margin-left: 5vh;
+  }
+
+  h3 {
+    font-size: 30px;
   }
 }
