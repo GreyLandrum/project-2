@@ -40,4 +40,8 @@ body {
   .custom-hero-text {
     font-size: 3rem;
   }
+  .footer {
+    text-align: center;
+    height: 120px;
+  }
 }
