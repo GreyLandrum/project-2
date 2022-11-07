@@ -10,218 +10,679 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <div class="navbar">
-      <div class="name">Sean's Breakfast Shack</div>
-      <ul>
-        <a href="home.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="menu.html">Menu</a>
-      </ul>
-    </div>
-    <div class="search">Search</div>
+    <link rel="stylesheet" href="./css/menu.css" />
   </head>
-  <div>
-   <body style="background-color:bisque;">
-   <center><h1>Our Menu!</h1></center>
-    <h2>Appetizers</h2>
+
+  <body style="background-color: bisque">
+    <div class="navbar">
+      <nav class="navbar w-100 navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Sean's Breakfast Shack</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="about.html"
+                >About</a
+              >
+              <a class="nav-link" href="menu.html">Menu</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <h1 class="text-center display-1">Our Menu!</h1>
+    <h2 class="ms-2 ms-md-5 mt-4">Appetizers</h2>
+
+    <!-- <div class="container">
+      <div class="card-wrap">
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="images/close-up-of-two-muffins-on-a-plate-1828403.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Muffins</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$2.00</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/crystal-jo-Q58N5cBKDZ8-unsplash.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">French Toast Sticks</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$3.00</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/2-pies-1329413.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mini Pies</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$3.00</small>
+            </div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="images/chocolate-croissant-1327698.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Choco Croissant</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$2.00</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/cinnamon-roll-1326351.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cinna Bun</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$2.50</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/fresh-homemade-bagel-1502276.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bagel</h5>
+              <p class="card-text"></p>
+              <div class="card-footer">
+                <small class="text-muted">$2.00</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="ms-2 ms-md-5 mt-4">Drinks</h2>
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="images/coffee-1323357.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Coffee</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$2.00</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/6a6f691a-bcc1-4be4-82b6-345966aa2ac0_lg_sq.jpeg"
+              class="card-img-top"
+              alt="..."
+              width="100"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Orange Juice</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$2.50</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/glass-of-milk.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Milk</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$2.00</small>
+            </div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="images/glass-1464327.jpg"
+              class="card-img-top"
+              alt="..."
+              width="100"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Iced Sweet Tea</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$2.00</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/glass_and_glass_bottle_of_water_600x600.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Water</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$1.00</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/istockphoto-530428650-612x612.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Soda</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$2.00</small>
+            </div>
+          </div>
+        </div>
+        <h2 class="ms-2 ms-md-5 mt-4">Entrees</h2>
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="images/pancakes-1324771.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sean's Famous Pancakes</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$8.00</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/southern-grits-1206404.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Grits n' Toast</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$9.00</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/close-up-of-two-waffles-with-butter-melting-1899768.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Waffles</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$9.00</small>
+            </div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="images/sausage-and-eggs-1328502.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sausage n' Eggs</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$8.00</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/breakfast-1313652.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Eggs n' Toast</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$10.00</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/poached-egg-on-toast-1328485.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Poached Toast</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$8.00</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="card">
+            <img
+              src="images/close-up-of-two-muffins-on-a-plate-1828403.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Muffins</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$2.00</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="card">
+            <img
+              src="images/crystal-jo-Q58N5cBKDZ8-unsplash.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">French Toast Sticks</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$3.00</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="card">
+            <img
+              src="images/2-pies-1329413.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mini Pies</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$3.00</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="card">
+            <img
+              src="images/chocolate-croissant-1327698.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Choco Croissant</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$2.00</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="card">
+            <img
+              src="images/cinnamon-roll-1326351.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cinna Bun</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$2.50</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="card">
+            <img
+              src="images/fresh-homemade-bagel-1502276.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bagel</h5>
+              <p class="card-text"></p>
+              <div class="card-footer">
+                <small class="text-muted">$2.00</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="ms-2 ms-md-5 mt-4">Drinks</h2>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="card">
+            <img
+              src="images/coffee-1323357.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Coffee</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$2.00</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="card">
+            <img
+              src="images/6a6f691a-bcc1-4be4-82b6-345966aa2ac0_lg_sq.jpeg"
+              class="card-img-top"
+              alt="..."
+              width="100"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Orange Juice</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$2.50</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="card">
+            <img
+              src="images/glass-of-milk.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Milk</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$2.00</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="card">
+            <img
+              src="images/glass-1464327.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Iced Sweet Tea</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$2.00</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="card">
+            <img
+              src="images/glass_and_glass_bottle_of_water_600x600.webp "
+              class="card-img-top"
+              alt="..."
+              width="100"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Water</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$1.00</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="card">
+            <img
+              src="images/istockphoto-530428650-612x612.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Soda</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$2.00</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row mt-5">
+      <div class="col-sm-12 col-md-4 mt-3">
+        <div class="card">
+          <img
+            src="images/glass-1464327.jpg"
+            class="card-img-top"
+            alt="..."
+            width="100"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Iced Sweet Tea</h5>
+            <p class="card-text"></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">$2.00</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 mt-3">
+        <div class="card">
+          <img
+            src="images/glass_and_glass_bottle_of_water_600x600.webp"
+            class="card-img-top"
+            alt="..."
+            width="250"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Water</h5>
+            <p class="card-text"></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">$1.00</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 mt-3">
+        <div class="card">
+          <img
+            src="images/istockphoto-530428650-612x612.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Soda</h5>
+            <p class="card-text"></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">$2.00</small>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <h2 class="ms-2 ms-md-5 mt-4`">Entrees</h2>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="card">
+            <img
+              src="images/pancakes-1324771.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sean's Famous Pancakes</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$9.00</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="card">
+            <img
+              src="images/southern-grits-1206404.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Grits n' Toast</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$9.00</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="card">
+            <img
+              src="images/close-up-of-two-waffles-with-butter-melting-1899768.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Waffles</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$8.00</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="card">
+            <img
+              src="images/sausage-and-eggs-1328502.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sausage n' Eggs</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$10.00</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="card">
+            <img
+              src="images/breakfast-1313652.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Eggs n' Toast</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$9.00</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mt-3">
+          <div class="card">
+            <img
+              src="images/poached-egg-on-toast-1328485.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Poached Toast</h5>
+              <p class="card-text"></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">$8.00</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-      <div class="card-group">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Muffins</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">French Toast Sticks</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Mini Pies</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-</div>
-<div class="card-group">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-</div>
-  <h2>Drinks</h2>
-  <div class="card-group">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  </div>
-  <div class="card-group">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  </div>
-  <h2>Entrees</h2>
-  <div class="card-group">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  </div>
-  <div class="card-group">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  </div>
   </body>
 </html>
